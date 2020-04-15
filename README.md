@@ -62,3 +62,18 @@ Given the user attempts to lower the temperature below 10 degrees
 When they use the down function
 The temperature does not decrease below 10 degrees
 
+
+### User story 5**
+
+As a user, when the power saving mode on
+I want to make sure the temperature does not go above 25 degrees
+so that I can make sure I do not waste energy
+
+# Acceptance criteria
+
+The user can switch on a power saving mode
+The  power saving mode caps the temperature increase at 25 degrees
+
+Given the user has activated the power saving mode
+When they try to increase the temperature above 25 degree
+The temperature does not increase above 25 degrees
