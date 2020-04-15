@@ -17,3 +17,15 @@ Given the user has started the thermostat
 When the temperature is set
 Then it is set at 20 degrees
 
+# User story 2
+
+As a user, when I am getting cold
+I want to increase the temperature of the thermostat
+so that I can be warm and cozy
+
+Accpetance criteria
+
+Given the user has started the thermostat
+When they want to increase the temperature
+They can increase the temperature
+

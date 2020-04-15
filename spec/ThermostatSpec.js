@@ -5,9 +5,16 @@ describe('Thermostat', function() {
   });
 
   describe('starting temperature', function() {
-    it('returns starting temperature of 20 degrees', function() {
-      //thermostat = new Thermostat;
+    it('starts thermostat with temperature of 20 degrees', function() {
       expect(thermostat.startTemperature).toEqual(20)
     }); 
   });
+
+  describe('.up', function() {
+    it('increases the temperature by 1 degree', function() {
+      thermostat.up();
+      expect(thermostat.temperature).toBe(thermostat.startTemperature + 1);
+    });
+  });
 });
+
