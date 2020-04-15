@@ -77,3 +77,19 @@ The  power saving mode caps the temperature increase at 25 degrees
 Given the user has activated the power saving mode
 When they try to increase the temperature above 25 degree
 The temperature does not increase above 25 degrees
+
+
+### User story 6
+
+As a user, when the power saving mode off
+I want to make sure the temperature does not go above 32
+so that I can make sure I do not waste energy when it is obviously not needed
+
+# Acceptance criteria
+
+The user can switch the power saving mode off
+When the power saving mode is off, the temperature is capped at 32 degrees
+
+Given the user has switched off the power saving mode
+When they try to increase the temperature above 32 degrees
+The temperature does not increase above 32 degrees

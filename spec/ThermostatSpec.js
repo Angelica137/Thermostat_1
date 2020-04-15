@@ -11,17 +11,26 @@ describe('Thermostat', function() {
   });
 
   describe('.up', function() {
+    /*
     it('increases the temperature by 1 degree', function() {
       thermostat.powerSaving = false;
       thermostat.temperature = 40;
       thermostat.up();
       expect(thermostat.temperature).toBe(41);
     });
-    it('does not increase temperature above 25 when .powerSaving is on', function() {
+    */
+    it('when .powerSaving is on does not increase temperature above 25', function() {
       thermostat.temperature = 25;
       thermostat.up();
       expect(thermostat.temperature).toBe(25);
-    })
+    });
+    it('when .powerSaving is off does not increase temperature above 32', function() {
+      thermostat.powerSavingSwitch();
+      thermostat.temperature = 32;
+      thermostat.up();
+      expect(thermostat.temperature).toBe(32);
+    });
+
   });
 
   describe('.down', function() {
