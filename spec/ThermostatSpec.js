@@ -18,13 +18,11 @@ describe('Thermostat', function() {
     });
   });
 
-  /*
   describe('.down', function() {
     it('decreases the temperature by 1 degree', function() {
       thermostat.down();
       expect(thermostat.temperature).toBe(thermostat.startTemperature - 1);
     });
   });
-*/
 });
 

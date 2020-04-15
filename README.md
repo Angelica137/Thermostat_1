@@ -17,6 +17,7 @@ Given the user has started the thermostat
 When the temperature is set
 Then it is set at 20 degrees
 
+
 # User story 2
 
 As a user, when I am getting cold
@@ -25,7 +26,24 @@ so that I can be warm and cozy
 
 Accpetance criteria
 
-Given the user has started the thermostat
-When they want to increase the temperature
-They can increase the temperature
+The user can increase the temperature uing an up function
+
+Given the user wants to increase the temeperature of the thermostat
+When they use the up fonction
+Then the temperature increases
+
+
+# User story 3
+
+As a user, when I am feeling too warm
+I want to decrease the temperature of the thermostat with a down function
+so that I can be comfortable
+
+Acceptance criteria
+
+The user can decrease the temperature of the thermostat using a down function
+
+Given the user wants to lower the temperature
+When they use the down function
+Then the temperature decreases
 
