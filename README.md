@@ -93,3 +93,20 @@ When the power saving mode is off, the temperature is capped at 32 degrees
 Given the user has switched off the power saving mode
 When they try to increase the temperature above 32 degrees
 The temperature does not increase above 32 degrees
+
+
+### User story 7**
+
+As a user, when switch on th thermostat
+I want the power saving to be on
+so that I do not have to worry about wasting energy
+
+# Acceptance criteria
+
+When the thermostat is switched on, the power saving mode is on as a default
+
+Given the user has switched off the thermostat
+When they try to increase the temperature above 25 degrees
+Then the temperature does not increase above 25 because power saving is on
+
+Done with user story 5.
