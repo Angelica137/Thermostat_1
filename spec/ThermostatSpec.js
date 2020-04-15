@@ -23,6 +23,11 @@ describe('Thermostat', function() {
       thermostat.down();
       expect(thermostat.temperature).toBe(thermostat.startTemperature - 1);
     });
+    it('will not decrease the temperature below 10 degrees', function() {
+      thermostat.temperature = 10;
+      thermostat.down();
+      expect(thermostat.temperature).toBe(10)
+    });
   });
 });
 
