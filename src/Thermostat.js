@@ -1,6 +1,7 @@
 const startTemp = 20
-function Thermostat (startTemperature = startTemp) {
-  this.temperature = startTemperature;
+function Thermostat () {
+  this.startTemperature = 20
+  this.temperature = this.startTemperature;
   this.powerSaving = true;
 }
 
@@ -25,5 +26,5 @@ Thermostat.prototype.powerSavingSwitch = function() {
 
 Thermostat.prototype.reset = function () {
   this.temperature = startTemp;
-  console.log(1)
+  this.powerSaving = true;
 }

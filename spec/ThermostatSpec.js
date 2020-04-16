@@ -1,12 +1,12 @@
 describe('Thermostat', function() {
   var thermostat;
   beforeEach(function() {
-    thermostat = new Thermostat(startTemp);
+    thermostat = new Thermostat();
   });
 
   describe('starting temperature', function() {
     it('starts thermostat with temperature of 20 degrees', function() {
-      expect(thermostat.temperature).toEqual(20)
+      expect(thermostat.startTemperature).toEqual(20)
     }); 
   });
 
@@ -49,6 +49,12 @@ describe('Thermostat', function() {
       thermostat.temperature = 10;
       thermostat.reset();
       expect(thermostat.temperature).toBe(20);
+    });
+
+    it('Sets the pawer saving mode on', function() {
+      thermostat.powerSaving = false;
+      thermostat.reset();
+      expect(thermostat.powerSaving).toBe(true);
     });
   });
 
