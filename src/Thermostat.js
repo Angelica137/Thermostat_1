@@ -1,4 +1,4 @@
-const startTemp = 20
+
 function Thermostat () {
   this.startTemperature = 20
   this.temperature = this.startTemperature;
@@ -26,7 +26,7 @@ Thermostat.prototype.powerSavingSwitch = function() {
 }
 
 Thermostat.prototype.reset = function () {
-  this.temperature = startTemp;
+  this.temperature = this.startTemperature;
   this.powerSaving = true;
 }
 
