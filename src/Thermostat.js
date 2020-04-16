@@ -1,4 +1,6 @@
 
+'use strict';
+
 function Thermostat () {
   this.startTemperature = 20
   this.temperature = this.startTemperature;
