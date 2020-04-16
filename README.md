@@ -2,7 +2,7 @@
 
 The logic for a simple thermostat
 
-# User story 1
+## User story 1
 
 As a user, when I start my thermostat
 I want to know the temperature is set at 20 degrees
@@ -18,7 +18,7 @@ When the temperature is set
 Then it is set at 20 degrees
 
 
-# User story 2
+## User story 2
 
 As a user, when I am getting cold
 I want to increase the temperature of the thermostat
@@ -33,7 +33,7 @@ When they use the up fonction
 Then the temperature increases
 
 
-# User story 3
+## User story 3
 
 As a user, when I am feeling too warm
 I want to decrease the temperature of the thermostat with a down function
@@ -48,7 +48,7 @@ When they use the down function
 Then the temperature decreases
 
 
-### User story 4**
+## User story 4
 
 As a user, when I try to lower the temperature below 10 degrees
 I want to know this is the minimum temperature for the thermostat
@@ -63,7 +63,7 @@ When they use the down function
 The temperature does not decrease below 10 degrees
 
 
-### User story 5**
+## User story 5
 
 As a user, when the power saving mode on
 I want to make sure the temperature does not go above 25 degrees
@@ -79,7 +79,7 @@ When they try to increase the temperature above 25 degree
 The temperature does not increase above 25 degrees
 
 
-### User story 6
+## User story 6
 
 As a user, when the power saving mode off
 I want to make sure the temperature does not go above 32
@@ -95,9 +95,9 @@ When they try to increase the temperature above 32 degrees
 The temperature does not increase above 32 degrees
 
 
-### User story 7**
+## User story 7
 
-As a user, when switch on th thermostat
+As a user, when I switch on the thermostat
 I want the power saving to be on
 so that I do not have to worry about wasting energy
 
@@ -110,3 +110,19 @@ When they try to increase the temperature above 25 degrees
 Then the temperature does not increase above 25 because power saving is on
 
 Done with user story 5.
+
+
+
+### User story 8
+
+As a user, when I want to set the thermostat to the default settings
+I want to be find an option to do this
+so that I can have the settings back as they were when I switched it on
+
+# Acceptance criteria
+
+When the the user rests the the thermostat, all the properties go back to their default settings
+
+Given the user has used the reset function
+When they check the temperature
+Then they see it is back to the default setting of starting temperature

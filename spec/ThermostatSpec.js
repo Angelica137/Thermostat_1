@@ -1,12 +1,12 @@
 describe('Thermostat', function() {
   var thermostat;
   beforeEach(function() {
-    thermostat = new Thermostat();
+    thermostat = new Thermostat(startTemp);
   });
 
   describe('starting temperature', function() {
     it('starts thermostat with temperature of 20 degrees', function() {
-      expect(thermostat.startTemperature).toEqual(20)
+      expect(thermostat.temperature).toEqual(20)
     }); 
   });
 
@@ -28,12 +28,12 @@ describe('Thermostat', function() {
   describe('.down', function() {
     it('decreases the temperature by 1 degree', function() {
       thermostat.down();
-      expect(thermostat.temperature).toBe(thermostat.startTemperature - 1);
+      expect(thermostat.temperature).toBe(19);
     });
     it('will not decrease the temperature below 10 degrees', function() {
       thermostat.temperature = 10;
       thermostat.down();
-      expect(thermostat.temperature).toBe(10)
+      expect(thermostat.temperature).toBe(10);
     });
   });
 
@@ -41,6 +41,14 @@ describe('Thermostat', function() {
     it('Switches the power saving mode off when it is on', function() {
       thermostat.powerSavingSwitch();
       expect(thermostat.powerSaving).toBe(false);
+    });
+  });
+
+  describe('.reset', function() {
+    it('Resets the temperature back to 20', function() {
+      thermostat.temperature = 10;
+      thermostat.reset();
+      expect(thermostat.temperature).toBe(20);
     });
   });
 
