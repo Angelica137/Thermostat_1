@@ -33,5 +33,7 @@ Thermostat.prototype.reset = function () {
 Thermostat.prototype.getUsage = function () {
   if (this.temperature < 18) {
     this.usage = 'low-usage';
+  } else if (this.temperature > 25) {
+    this.usage = 'high-usage';
   }
 }

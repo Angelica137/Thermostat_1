@@ -59,13 +59,23 @@ describe('Thermostat', function() {
   });
 
   describe('.getUsage', function() {
+    //asuming temeprature is returned in intergers
     it('displays low-usage if temperature is under 18', function() {
-      //asuming temeprature is returned in intergers
       thermostat.temperature = 17;
       thermostat.getUsage();
       expect(thermostat.usage).toBe('low-usage');
+    });
+    it('displays medium-usage if temperature bwtween under 18 and 25 inclusive', function() {
+      thermostat.temperature = 18;
+      thermostat.getUsage();
+      expect(thermostat.usage).toBe('medium-usage');
+    });
+    it('displays high-usage if temeprature is greater than 25', function() {
+      thermostat.temperature = 32;
+      thermostat.getUsage();
+      expect(thermostat.usage).toBe('high-usage');
     })
-  })
+  });
 
 });
 
