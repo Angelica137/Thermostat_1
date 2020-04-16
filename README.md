@@ -126,3 +126,24 @@ When the the user rests the the thermostat, all the properties go back to their 
 Given the user has used the reset function
 When they check the temperature
 Then they see it is back to the default setting of starting temperature
+
+
+### User story 
+
+As a user, when I am worried about energy suage
+I want to be able to know what the current energy usage of my thermostat is
+so that I can be in control of the energy I use
+
+# Requirements
+energy usage: 
+< 18 is low-usage, 
+< 25 is medium-usage, 
+anything else is high-usage.
+
+# Acceptance criteria
+
+The user is able to see and understand what their energy usage is
+
+Given the user wants to know their energy usage
+When they request this information
+Then they see it in a way they can understand

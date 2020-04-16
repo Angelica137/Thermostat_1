@@ -58,5 +58,14 @@ describe('Thermostat', function() {
     });
   });
 
+  describe('.getUsage', function() {
+    it('displays low-usage if temperature is under 18', function() {
+      //asuming temeprature is returned in intergers
+      thermostat.temperature = 17;
+      thermostat.getUsage();
+      expect(thermostat.usage).toBe('low-usage');
+    })
+  })
+
 });
 

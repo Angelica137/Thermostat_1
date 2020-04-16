@@ -3,6 +3,7 @@ function Thermostat () {
   this.startTemperature = 20
   this.temperature = this.startTemperature;
   this.powerSaving = true;
+  this.usage = 'medium-usage'
 }
 
 Thermostat.prototype.up = function() {
@@ -27,4 +28,10 @@ Thermostat.prototype.powerSavingSwitch = function() {
 Thermostat.prototype.reset = function () {
   this.temperature = startTemp;
   this.powerSaving = true;
+}
+
+Thermostat.prototype.getUsage = function () {
+  if (this.temperature < 18) {
+    this.usage = 'low-usage';
+  }
 }
