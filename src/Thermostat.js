@@ -19,15 +19,10 @@ Thermostat.prototype.up = function() {
 Thermostat.prototype.down = function() {
   if (this.temperature > 10) {
     this.temperature--;
-  } else {
-    this.temperature = 10;
   }
 };
 
 Thermostat.prototype.powerSavingSwitch = function() {
-  if (this.powerSaving === true) {
-    this.powerSaving = false;
-  } else {
-    true
-  }
+  this.powerSaving ? this.powerSaving = false:
+  this.powerSaving = true
 }
