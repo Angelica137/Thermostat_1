@@ -128,9 +128,9 @@ When they check the temperature
 Then they see it is back to the default setting of starting temperature
 
 
-### User story 
+### User story 9
 
-As a user, when I am worried about energy suage
+As a user, when I am worried about energy usage
 I want to be able to know what the current energy usage of my thermostat is
 so that I can be in control of the energy I use
 
